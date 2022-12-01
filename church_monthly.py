@@ -10,7 +10,7 @@ Created on Sat Nov 26 19:00:04 2022
 
 
 
-hours_heating_on = 720
+hours_heating_on = 140
 hours_door_opens = 140
 time_open = 0.083       #This is a fraction of an hour representing time door open per hour
 d = 30  # Days a month that the heating turns on
@@ -20,7 +20,7 @@ flow_velocity = 4       #This is wind speed in m/s
 
 internal_temp = 20      # this is the desired internal temperature
 
-external_temp = [5.26,5,7,9,12,15,17,17,15,11,8,6]     #This is the list of average temperatures - 1 for each month
+external_temp = [5.26, 5.46, 7.28, 9.66, 12.7, 15.6, 17.6, 17.2, 14.9, 11.6, 8.02, 5.61]     #This is the list of average temperatures - 1 for each month
 ground_temp = 10.4
 CSA = 1.6           # Area of the door
 
@@ -80,7 +80,6 @@ for x in time:
 
         H_total = (Ht * hours_heating_on)+(time_open * Hv * hours_door_opens) + (d*q)
       
-        
         Cost_gas = H_total * gas
         Cost_elec = H_total * elec
         
