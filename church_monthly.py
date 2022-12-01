@@ -26,15 +26,15 @@ CSA = 1.6           # Area of the door
 
 
 
-U_walls = 2
+U_walls = 2.09
 U_roof =  2.5
 U_ground = 1.3
 
 
 # Non Adjustable Variables
 
-A_walls = 769.28
-A_roof = 640
+A_walls = 960
+A_roof = 424
 A_ground = 320
 
 
